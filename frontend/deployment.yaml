@@ -22,3 +22,5 @@ spec:
         - image: ghcr.io/shannon36/gc-sus-frontend:eb0912113df69bdb593ee2fce909674a122232d5
           name: frontend
           resources: {}
+      imagePullSecrets:
+        - name: pullsecret
