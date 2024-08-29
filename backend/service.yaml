@@ -2,16 +2,16 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: backendapp
+    app: backend
     name: backendservice
   name: backendservice
   namespace: backend
 spec:
   ports:
-    - name: 8080-8080
-      port: 8080
+    - name: 9090-9090
+      port: 9090
       protocol: TCP
-      targetPort: 8080
+      targetPort: 9090
   selector:
-    app: frontend
+    app: backend
   type: ClusterIP
