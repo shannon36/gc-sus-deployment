@@ -23,4 +23,4 @@ spec:
           name: backend
           resources: {}
       imagePullSecrets:
-      -name: pullsecret
+        - name: pullsecret
