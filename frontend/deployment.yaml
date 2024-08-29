@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: frontend
+  name: frontend
+  namespace: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - image: ghcr.io/shannon36/gc-sus-frontend:c5b2b70524015aa54ec2f95a5e0a644486bac52e
+          name: frontend
+          resources: {}
+Not Found
