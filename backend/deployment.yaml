@@ -22,4 +22,3 @@ spec:
         - image: ghcr.io/shannon36/gc-sus-backend:latest
           name: backend
           resources: {}
-Not Found
