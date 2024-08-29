@@ -19,7 +19,6 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-frontend:c5b2b70524015aa54ec2f95a5e0a644486bac52e
+        - image: ghcr.io/shannon36/gc-sus-frontend:latest
           name: frontend
           resources: {}
-Not Found
