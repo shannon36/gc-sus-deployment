@@ -19,7 +19,7 @@ spec:
         app: backend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-backend:9e0eba3c284d7e17ba2ae71ca3d8302e88500824
+        - image: ghcr.io/shannon36/gc-sus-backend:latest
           name: backend
           resources: {}
 Not Found
