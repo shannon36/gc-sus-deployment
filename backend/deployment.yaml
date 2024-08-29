@@ -19,6 +19,6 @@ spec:
         app: backend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-backend:latest
+        - image: ghcr.io/shannon36/gc-sus-backend:e128e12c855c14fe840c4064504c091389c4903a
           name: backend
           resources: {}
