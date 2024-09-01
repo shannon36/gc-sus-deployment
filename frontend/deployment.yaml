@@ -21,6 +21,7 @@ spec:
       containers:
         - image: ghcr.io/shannon36/gc-sus-frontend:f451bc94bd4a0135c0f31d681cd31fff0df0b0f2
           name: frontend
+          port: 80
           resources: {}
       imagePullSecrets:
         - name: pullsecret
