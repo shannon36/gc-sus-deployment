@@ -19,9 +19,9 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-frontend:3f511797a995c7e94a9f9baacbf527c45308c0a9
+        - port: 80
+          image: ghcr.io/shannon36/gc-sus-frontend:3f511797a995c7e94a9f9baacbf527c45308c0a9
           name: frontend
-          containerPort: 80
           resources: {}
       imagePullSecrets:
         - name: pullsecret

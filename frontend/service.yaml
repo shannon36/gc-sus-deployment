@@ -8,10 +8,9 @@ metadata:
   namespace: frontend
 spec:
   ports:
-    - name: 8080-8080
+    - name: 80
       port: 80
       protocol: TCP
-      targetPort: 8080
   selector:
     app: frontend
   type: LoadBalancer
