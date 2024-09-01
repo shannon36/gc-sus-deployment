@@ -19,7 +19,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-frontend:f451bc94bd4a0135c0f31d681cd31fff0df0b0f2
+        - image: ghcr.io/shannon36/gc-sus-frontend:dbf0cb9483f2abd9a9bc1e68f718d5b81b955e2d
           name: frontend
           resources: {}
       imagePullSecrets:
