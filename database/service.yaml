@@ -14,4 +14,5 @@ spec:
       targetPort: 3306
   selector:
     app: mariadb
-  type: ClusterIP
+  type: ExternalName
+  externalName: db.myexternalserver.com
