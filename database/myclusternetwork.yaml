@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-spring-boot-mysql-access
+  namespace: mysql-database
+spec:
+  podSelector:
+    matchLabels:
+      app: mycluster
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: backend
+    ports:
+    - protocol: TCP
+      port: 3306
