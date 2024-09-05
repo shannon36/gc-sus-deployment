@@ -12,6 +12,5 @@ spec:
       port: 80
       protocol: TCP
   selector:
-    app: frontend
-  #temporaily change from LoadBalancer to NodePort for dev purposes 
-  type: NodePort
+    app: frontend 
+  type: LoadBalancer
