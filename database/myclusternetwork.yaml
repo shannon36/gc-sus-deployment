@@ -6,7 +6,9 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app: mycluster
+      app: mycluster-0
+      app: mycluster-1
+      app: mycluster-router-f9b65c6bf-td8hc
   ingress:
   - from:
     - namespaceSelector:
