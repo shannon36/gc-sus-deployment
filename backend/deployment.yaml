@@ -21,6 +21,17 @@ spec:
       containers:
         - image: ghcr.io/shannon36/gc-sus-backend:2a2bec95a5da4cd554c139065228ed650b7805e7
           name: backend
+          env:
+          - name: DB_USER
+            valueFrom:
+              secretKeyRef:
+                name: backend-secret
+                key: db-user
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: backend-secret
+                key: db-password
           resources: {}
       imagePullSecrets:
         - name: pullsecret
