@@ -17,27 +17,7 @@ spec:
       creationTimestamp: null
       labels:
         app: backend
-    spec:
-      volumes:
-      - name: ssh-key
-        secret:
-          secretName: ssh-private-key
-          items: 
-          - key: ssh-privatekey
-            path: id_ed25519
-      initContainers:
-      - name: ssh-tunnel
-        image: alphine:3.13
-        command:
-        - sh
-        - -c
-        - |
-          chmod 400 /root/.ssh/id_ed25519
-          ssh -o StrictHostKeyChecking=no -i /root/.ssh/id_ed25519 -N -L 3307:127.0.0.1:3306 root@103.3.62.197 & 
-        volumeMounts:
-        - name: ssh-key
-          mountPath: /root/.ssh
-          subPath: id_ed25519  
+    spec: 
       containers:
         - image: ghcr.io/shannon36/gc-sus-backend:3ac60b87acbbeb2cb1f378f2b341b6d0bcaf0313
           name: backend
