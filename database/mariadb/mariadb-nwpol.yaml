@@ -12,7 +12,7 @@ spec:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: backend
+          name: backendservice
     ports:
     - protocol: TCP
       port: 3306
