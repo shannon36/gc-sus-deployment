@@ -1,18 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: allow-angular-springboot-access
-  namespace: backend
+  name: allow-spring-boot-mariadb-access
+  namespace: mariadb
 spec:
   podSelector:
     matchLabels:
-      app: backend
-  #ingress traffic from frontend
+      app: mariadb
+  policyType:
+  - Ingress
   ingress:
   - from:
     - namespaceSelector:
         matchLabels:
-          name: frontend
+          name: backend
     ports:
     - protocol: TCP
-      port: 8080
+      port: 3306
