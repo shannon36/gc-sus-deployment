@@ -3,8 +3,8 @@ kind: Service
 metadata:
   labels:
     app: frontend
-    name: frontendservice
-  name: frontendservice
+    name: frontend
+  name: frontend
   namespace: frontend
 spec:
   ports:

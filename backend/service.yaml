@@ -3,8 +3,8 @@ kind: Service
 metadata:
   labels:
     app: backend
-    name: backendservice
-  name: backendservice
+    name: backend
+  name: backend
   namespace: backend
 spec:
   ports:
