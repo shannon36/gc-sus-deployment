@@ -16,5 +16,5 @@ spec:
   selector:
     app: mariadb
   #LB if required, ClusterIP  
-  type: LoadBalancer
+  type: ClusterIP
   
