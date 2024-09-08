@@ -12,9 +12,9 @@ spec:
       port: 8080
       protocol: TCP
     #  targetPort: 9376
-    #- name: https
-    #  port: 8443
-    #  protocol: TCP 
+    - name: https
+      port: 8443
+      protocol: TCP 
     #  targetPort: 9090
   selector:
     app: backend
