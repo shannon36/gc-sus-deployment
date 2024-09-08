@@ -9,7 +9,7 @@ metadata:
 spec:
   ports:
     - name: http 
-      port: 90
+      port: 8080
       protocol: TCP
     #  targetPort: 9376
     #- name: https
