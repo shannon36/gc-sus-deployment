@@ -7,8 +7,6 @@ spec:
   podSelector:
     matchLabels:
       app: mariadb
-  policyType:
-  - Ingress
   ingress:
   - from:
     - namespaceSelector:
