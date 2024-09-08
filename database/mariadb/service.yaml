@@ -12,6 +12,7 @@ spec:
       port: 3306
       protocol: TCP
       targetPort: 3306
+  ClusterIP: none    
   selector:
     app: mariadb
   #LB if required  

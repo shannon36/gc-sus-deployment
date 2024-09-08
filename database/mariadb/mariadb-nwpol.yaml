@@ -15,4 +15,4 @@ spec:
           name: backend
     ports:
     - protocol: TCP
-      port: 3306
+      port: 3307
