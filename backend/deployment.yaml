@@ -33,8 +33,7 @@ spec:
                 name: backend-secret
                 key: db-password
           ports:
-          #change from 8080 to 80 to test out 
-            - containerPort: 80
+            - containerPort: 8080
           resources: {}
       imagePullSecrets:
         - name: pullsecret

@@ -10,7 +10,8 @@ spec:
   ports:
     - name: http 
       #change from 8080 to 80 to test out
-      port: 80 
+      port: 8080
+      targetPort: 80 
       protocol: TCP
     #  targetPort: 9376
     #- name: https
