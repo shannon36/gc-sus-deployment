@@ -18,4 +18,5 @@ spec:
     #  targetPort: 8080
   selector:
     app: frontend 
-  type: LoadBalancer
+    #changed from LB to ClusterIP
+  type: ClusterIP
