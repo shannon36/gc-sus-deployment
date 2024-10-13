@@ -24,5 +24,9 @@ spec:
           ports:
             - containerPort: 80
           resources: {}
+      securityContext:
+        sysctls:
+          - name: net.ipv4.ip_unprivileged_port_start
+            value: "0"
       imagePullSecrets:
         - name: pullsecret
