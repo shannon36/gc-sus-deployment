@@ -19,7 +19,7 @@ spec:
         app: backend
     spec: 
       containers:
-        - image: ghcr.io/shannon36/gc-sus-backend:888688e987812fbfec0d0b014c0d16b2369449e3
+        - image: ghcr.io/shannon36/gc-sus-backend:66ccbde1959fc31bdd1b75fc92145dbd1862be4e
           name: backend
           env:
           - name: DB_USER
