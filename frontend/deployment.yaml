@@ -19,7 +19,7 @@ spec:
         app: frontend
     spec:
       containers:
-        - image: ghcr.io/shannon36/gc-sus-frontend:dc14a4386b3981d9dca9fa417642fed15660b8a9
+        - image: ghcr.io/shannon36/gc-sus-frontend:d618adba2a2f4d3f5fc9ff2b08108e80b6e06f5a
           name: frontend
           ports:
             - containerPort: 80
